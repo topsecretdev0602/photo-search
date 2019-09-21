@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Container from "@material-ui/core/Container";
 import TextField from "@material-ui/core/TextField";
 import Select from "@material-ui/core/Select";
 import MenuItem from "@material-ui/core/MenuItem";
@@ -39,7 +40,7 @@ class PhotoSearch extends Component {
 
   render() {
     return (
-      <div>
+      <Container maxWidth="xl">
         <TextField
           mt={5}
           name="searchText"
@@ -78,7 +79,7 @@ class PhotoSearch extends Component {
         {this.state.photos.length > 0 ? (
           <SearchResults photos={this.state.photos} />
         ) : null}
-      </div>
+      </Container>
     );
   }
 }
