@@ -14,7 +14,7 @@ class PhotoSearch extends Component {
     searchText: "",
     numPhotos: 20,
     apiUrl: "https://pixabay.com/api",
-    apiKey: "${process.env.PIXABAY_API_KEY}",
+    apiKey: `${process.env.PIXABAY_API_KEY}`,
     photos: []
   };
 
